@@ -1,0 +1,136 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    --header:hsl(168, 70%, 43%);
+    --text:hsl(0, 0%, 100%);
+    --sub:lab(74.02% 19.39 75.19);
+
+}
+
+
+header{
+    top: 0%;
+    background: var(--header);
+    display: flex;
+    gap: 100px;
+}
+.logo span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+    color:var(--text);
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo span:hover{
+    color: var(--sub);
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+header .nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 1.5em;
+    gap: 40px;
+}
+.nav ul li{
+    list-style: none;
+}
+.nav ul li a{
+    font-size: 1.4em;
+    text-decoration: none;
+    color: var(--text);
+}
+.nav ul li a:hover{
+    color: var(--sub);
+    text-decoration: underline;
+}
+.nav ul li a:active{
+    color: var(--sub);
+}
+
+.header_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_btn button{
+    background: var(--sub);
+    color: var(--text);
+    font-size: 1.3em;
+    border:0cap;
+    padding: 10px;
+}
+
+
+.hero {
+    height: 100vh;
+    background-image:url(/assets/images/home.png) ;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    color: var(--text);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+.hero_text {
+    color:var(--text);
+    max-width: 800px;
+}
+
+.hero h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4em;
+    font-style: bolder;
+}
+.hero p{
+    font-size: 20px;
+}
+
+
+.about{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.about_text{
+    margin: 60px;
+    padding-left: 30px;
+}
+.about_text h3{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    padding-bottom: 20px;
+}
+.about_text p{
+    font-size: 1.2em;
+    font-style: initial;
+}
+.about_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_image img{
+    height: 450px;
+    margin: 20px;
+}
+
+
