@@ -196,3 +196,67 @@ header .nav ul{
     text-decoration: underline;
 }
 
+.top{
+    text-align: center;
+    justify-content: center;
+}
+.top h3{
+    font-size: 2.4em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.arrows{
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#left{
+    height: 40px;
+    width: 40px;
+    font-size: 1.5em;
+    padding: 2px;
+    border-radius: 50%;
+    text-align: center;
+    background: var(--header);
+    color: var(--sub);
+}
+#right{
+    height: 40px;
+    width: 40px;
+    font-size: 1.5em;
+    padding: 2px;
+    border-radius: 50%;
+    text-align: center;
+    background: var(--header);
+    color: var(--sub);
+}
+
+.doc_gallery img{
+    height: 300px;
+}
+.doc1{
+    height: 350px;
+}
+.doc1 span{
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.doc1 p{
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery{
+    width: 800px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
