@@ -8,7 +8,7 @@
     --header:hsl(168, 70%, 43%);
     --text:hsl(0, 0%, 100%);
     --sub:lab(74.02% 19.39 75.19);
-
+    --dark:hsl(0, 0%, 0%);
 }
 
 
@@ -133,4 +133,66 @@ header .nav ul{
     margin: 20px;
 }
 
+.service .top{
+    text-align: center;
+    justify-content: center;
+}
+.service .top h3{
+    font-size: 2.4em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.service_box{
+    margin: 20px 50px;
+    display: flex;
+    gap: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.box{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1px solid;
+    height: 250px;
+    width: 300px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+.box i{
+    background: var(--dark);
+    color: var(--header);
+    font-size: 2.5em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;    
+    margin: 0 auto;  
+}
+.box span{
+    padding:0 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.box p{
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.box a{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.box a:active{
+    text-decoration: underline;
+}
 
