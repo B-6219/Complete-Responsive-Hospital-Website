@@ -88,6 +88,7 @@ header .nav ul{
     justify-content: center;
     text-align: center;
     padding: 0 20px;
+    margin-bottom: 4.5em;
 }
 .hero_text {
     color:var(--text);
@@ -107,7 +108,7 @@ header .nav ul{
 .about{
     display: flex;
     gap: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 4.5em;
 }
 .about_text{
     margin: 60px;
@@ -133,6 +134,10 @@ header .nav ul{
     margin: 20px;
 }
 
+
+.service{
+    margin-bottom: 3.5em;
+}
 .service .top{
     text-align: center;
     justify-content: center;
@@ -196,6 +201,10 @@ header .nav ul{
     text-decoration: underline;
 }
 
+
+.doctors{
+    margin-bottom: 4.5em;
+}
 .top{
     text-align: center;
     justify-content: center;
@@ -259,4 +268,136 @@ header .nav ul{
     grid-gap: 20px;
     padding: 10px;
     flex: none;
+}
+
+.blogs{
+    margin-bottom: 5.5em;
+}
+.blog_box{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post img{
+    height: 250px;
+}
+.post{
+    height:250px;
+}
+.post span{
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post p{
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.book_box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    padding: 2rem 0;
+}
+.book_img {
+    flex: 1 1 45%;
+    max-width: 45%;
+}
+.book_img img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.book_content {
+    flex: 1 1 45%;
+    max-width: 45%;
+}
+
+.book_table form {
+    width: 100%;
+    padding: 1.5rem;
+    border: 1px solid var(--header);
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.book_table h3 {
+    color: var(--dark);
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.book_table form input {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-transform: none;
+}
+
+.book_table form button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.book_table form button:hover {
+    background-color: #0056b3;
+}
+
+
+
+.footers{
+    background: var(--header);
+}
+.footer{
+    background: var(--header);
+    color: var(--text);
+    font-size: 1.5em;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.copyright span{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: var(--dark);
+    padding-bottom: 70px;
+    padding-top: 20px;
+    font-size: 1.5em;
+}
+.footer a{
+    text-decoration: none;
+    color: var(--text);
+}
+.foot_list span{
+    color: var(--sub);
+}
+.footer a:hover{
+    text-decoration: underline;
 }
