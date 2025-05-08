@@ -34,7 +34,7 @@
         </div>
 
         <div class="header_btn">
-            <button>Contact</button>
+            <button class="contactBtn">Contact</button>
         </div>
 
     </header>
@@ -101,14 +101,14 @@
 
             <div class="box">
                 <i class="fa-solid fa-house-medical-circle-check"></i>
-                <p>Lab Test</p><br>
+                <p>Surgery</p><br>
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt praesentium asperiores unde veniam, perspiciatis neque!</span>
                 <a href="">Learn More</a>
             </div>
 
             <div class="box">
                 <i class="fa-solid fa-bed-pulse"></i>
-                <p>Lab Test</p><br>
+                <p>Diagnosis</p><br>
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt praesentium asperiores unde veniam, perspiciatis neque!</span>
                 <a href="">Learn More</a>
             </div>
@@ -285,6 +285,98 @@
             <span>Made With love by Brian Tech</span>
         </div>
     </footer>
+
+    <!-- Contact Modal -->
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h3>Contact Us</h3>
+      <form>
+        <input type="text" placeholder="Your Name" required><br>
+        <input type="email" placeholder="Your Email" required><br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  
+<script src="assets/scrpits/scripts.js"></script>
+
+<!-- Trigger Button -->
+<button
+  class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+  onclick="toggleContactModal()"
+>
+  Contact
+</button>
+
+<!-- Modal -->
+<div
+  id="contactModal"
+  class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden"
+</div>
+  <div class="bg-white p-6 rounded-lg w-80 relative">
+    <h2 class="text-xl font-bold mb-4">Contact Us</h2>
+
+    <form onsubmit="return sendToWhatsApp(event)">
+      <label class="block mb-2">Name:</label>
+      <input
+        type="text"
+        id="userName"
+        required
+        class="w-full border border-gray-300 p-2 mb-4 rounded"
+        placeholder="Your Name"
+      />
+
+      <label class="block mb-2">Phone Number:</label>
+      <input
+        type="tel"
+        id="userPhone"
+        required
+        class="w-full border border-gray-300 p-2 mb-4 rounded"
+        placeholder="07XXXXXXXX"
+      />
+
+      <div class="flex justify-between">
+        <button
+          type="submit"
+          class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+        >
+          Send WhatsApp
+        </button>
+        <button
+          type="button"
+          onclick="toggleContactModal()"
+          class="text-gray-600 hover:underline"
+        >
+          Cancel
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+  function toggleContactModal() {
+    const modal = document.getElementById("contactModal");
+    modal.classList.toggle("hidden");
+  }
+
+  function sendToWhatsApp(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("userName").value;
+    const phone = document.getElementById("userPhone").value;
+
+    const message = `Hello, my name is ${name} and my phone number is ${phone}`;
+    const whatsappURL = `https://wa.me/254791948411?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappURL, "_blank");
+    toggleContactModal(); // close modal
+    return false;
+  }
+</script>
+
+
 
 </body>
 </html>
