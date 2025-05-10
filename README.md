@@ -8,6 +8,7 @@ A modern, responsive hospital website built using **HTML**, **CSS**, and **JavaS
 
 🔗 [Live Demo](https://complete-responsive-hospital-website.vercel.app/)
 
+
 ---
 
 ## ✨ Features
@@ -111,8 +112,14 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 Feel free to reach out via GitHub issues or pull requests!
 
 ```
+# 🏥 Complete Responsive Hospital Website
 
----
+![GitHub repo size](https://img.shields.io/github/repo-size/B-6219/Complete-Responsive-Hospital-Website)
+![GitHub last commit](https://img.shields.io/github/last-commit/B-6219/Complete-Responsive-Hospital-Website)
+![GitHub issues](https://img.shields.io/github/issues/B-6219/Complete-Responsive-Hospital-Website)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/B-6219/Complete-Responsive-Hospital-Website)
+![GitHub license](https://img.shields.io/github/license/B-6219/Complete-Responsive-Hospital-Website)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fcomplete-responsive-hospital-website.vercel.app)
 
-Would you like me to add images or badges (like GitHub stars, issues, etc.) to make it even more attractive?
-```
+
+
