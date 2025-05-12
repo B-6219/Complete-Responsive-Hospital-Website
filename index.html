@@ -319,37 +319,15 @@
 
     <form onsubmit="return sendToWhatsApp(event)">
       <label class="block mb-2">Name:</label>
-      <input
-        type="text"
-        id="userName"
-        required
-        class="w-full border border-gray-300 p-2 mb-4 rounded"
-        placeholder="Your Name"
-      />
+      <input type="text" id="userName" required class="w-full border border-gray-300 p-2 mb-4 rounded" placeholder="Your Name"/>
 
       <label class="block mb-2">Phone Number:</label>
       <input
-        type="tel"
-        id="userPhone"
-        required
-        class="w-full border border-gray-300 p-2 mb-4 rounded"
-        placeholder="07XXXXXXXX"
-      />
+        type="tel" id="userPhone" required class="w-full border border-gray-300 p-2 mb-4 rounded" placeholder="07XXXXXXXX"/>
 
       <div class="flex justify-between">
-        <button
-          type="submit"
-          class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
-        >
-          Send WhatsApp
-        </button>
-        <button
-          type="button"
-          onclick="toggleContactModal()"
-          class="text-gray-600 hover:underline"
-        >
-          Cancel
-        </button>
+        <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"> Send WhatsApp</button>
+        <button type="button"onclick="toggleContactModal()"class="text-gray-600 hover:underline" >Cancel</button>
       </div>
     </form>
   </div>
